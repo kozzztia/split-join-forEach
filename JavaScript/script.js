@@ -56,11 +56,62 @@ const a3 = [2, "hello", 3, "hi", 4, "Mazai", 5, 6, 7, 8, 'gogog', 'tank', 'i']
 
 // -------------------------------task 4
 
-push.onclick = () => {
+// push.onclick = () => {
 
-  let attr = []
-  out.forEach((element) => {
-    console.log(element.dataset.num)
+//   let attr = []
+//   out.forEach((element) => {
+//     attr.push(+element.dataset.num)
+//   })
+//   console.log(attr)
+// }
+
+// --------------------------task 5
+// let dataArray = []
+// out.forEach(function (element) {
+//   element.addEventListener('click', () => {
+//     dataArray.push(element.dataset.num)
+//     console.log(dataArray)
+//     return dataArray
+//   })
+// })
+// push.onclick = () => {
+//   console.log(dataArray)
+// }
+
+// -------------------------------task 6
+
+// push.onclick = function () {
+//   let array = input.value;
+//   out[0].innerHTML = array.split('');
+// }
+
+// -----------------------------task 7
+
+// push.onclick = function () {
+//   let array = input.value;
+//   text = array.split(' ');
+//   out[1].innerHTML = text;
+// }
+
+// -----------------------------task 8
+
+// let a8 = [1, 2, 66, 77, 15];
+
+// push.onclick = function () {
+//   out[3].innerHTML = a8.join(', ');
+// }
+
+
+// -----------------------------task9
+
+let a9 = [
+  ['hi', 'mahai'],
+  ['test', 'best']
+]
+push.onclick = function () {
+  let arrText = []
+  a9.forEach(function (element) {
+    arrText.push(element.join(', '));
   })
-  console.log(attr)
+  out[2].innerHTML = arrText.join(', ');
 }
